@@ -1,12 +1,10 @@
 services:
   pg-database:
-    image: postgres:13
+    image: postgres:latest
     environment:
       - POSTGRES_USER="root"
       - POSTGRES_PASSWORD="root"
-      - POSTGRES_DB="ny_taxi"
-    volumes:
-      - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
+      - POSTGRES_DB="db-test"
     ports:
       - 5432:5432
   pgadmin:
