@@ -6,7 +6,7 @@ services:
       - POSTGRES_PASSWORD="root"
       - POSTGRES_DB="db-test"
     volumes:
-      - ./db-test:/var/lib/postgresql
+      - ./pg-database:/var/lib/postgresql
     ports:
       - 5432:5432
   pgadmin:
