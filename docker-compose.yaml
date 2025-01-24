@@ -2,9 +2,9 @@ services:
   pg-database:
     image: postgres:latest
     environment:
-      - POSTGRES_USER="root"
-      - POSTGRES_PASSWORD="root"
-      - POSTGRES_DB="pg-database"
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=pg-database
     volumes:
       - "./pg-database:/var/lib/postgresql/data:rw"
     ports:
